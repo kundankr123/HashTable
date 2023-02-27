@@ -35,6 +35,16 @@ namespace HashTablePrograms
             {
                 Console.WriteLine("{0}: {1}", word, Freq[word]);
             }
+
+            Console.WriteLine("---------------------------------");
+            Console.WriteLine("New Frequencies after removing the Word avoidable: ");
+            Freq.Remove("avoidable");
+
+
+            foreach (string word in Freq.Keys)
+            {
+                Console.WriteLine("{0}: {1}", word, Freq[word]);
+            }
         }
     }
 }
